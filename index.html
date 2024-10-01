@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD ASADUZZAMAN - Senior Software Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0f172a',
+                        'secondary': '#1e293b',
+                        'highlight': '#38bdf8',
+                        'text-light': '#e2e8f0',
+                        'text-dark': '#334155',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        bounce: 'bounce 3s infinite',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-title {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-subtitle {
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .hero-contact {
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .hero-link:hover {
+            color: #818cf8;
+            text-decoration: underline;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            animation: gradientBackground 10s ease infinite;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-primary text-text-light font-sans p-4 sm:p-6">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="text-center py-8 sm:py-12 mb-8 sm:mb-16 hero-section">
+            <h1 class="text-4xl sm:text-6xl font-bold gradient-text mb-4 hero-title">MD ASADUZZAMAN</h1>
+            <p class="text-2xl sm:text-3xl mb-4 hero-subtitle">Senior Software Engineer</p>
+            <p class="text-base sm:text-lg mb-4 hero-contact">Dhaka, Bangladesh</p>
+            <p class="text-base sm:text-lg mb-2 hero-contact">asaduzzaman.cse@gmail.com | +8801738736090</p>
+            <a href="https://www.linkedin.com/in/theasad/" class="text-highlight hover:underline text-base sm:text-lg hero-link">linkedin.com/in/theasad</a>
+        </header>
+
+        <!-- Summary Section -->
+        <section class="bg-secondary p-6 sm:p-8 rounded-lg shadow-lg mb-8 sm:mb-16 transition-transform hover:scale-105 fade-in">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Summary</h2>
+            <p class="text-base sm:text-lg leading-relaxed">
+                Dynamic Senior Software Engineer with 8+ years of experience, specializing in high-traffic web applications, microservices architecture, and system optimization. Skilled in both backend technologies (PHP, Python, Node.js) and cloud solutions (AWS, Docker). Adept at leading development teams and delivering projects with agile methodologies, achieving enhanced system performance and scalability.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div class="bg-secondary p-8 rounded-lg shadow-lg transition-transform hover:scale-105 fade-in">
+                <h2 class="text-3xl font-semibold mb-6">Core Skills</h2>
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>PHP (8+ years)</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>Laravel & Lumen</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>Python & Django (4+years)</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>NodeJs (5+ years)</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>Typescript (2+ years)</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>MySQL (7+ years)</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>PostgreSQL (3+ years)</li>
+                </ul>
+            </div>
+            <div class="bg-secondary p-8 rounded-lg shadow-lg transition-transform hover:scale-105 fade-in">
+                <h2 class="text-3xl font-semibold mb-6">Additional Skills</h2>
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>ElasticSearch & Redis</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>Docker & Kubernetes</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>AWS EC2, S3</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>RabbitMQ & Kafka</li>
+                    <li class="flex items-center"><span class="w-3 h-3 bg-highlight rounded-full mr-3"></span>JavaScript & jQuery</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <section class="bg-secondary p-6 sm:p-8 rounded-lg shadow-lg mt-8 sm:mt-16 transition-transform hover:scale-105 fade-in">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Professional Experience</h2>
+            <div class="space-y-6 sm:space-y-8">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-2">Senior Software Engineer</h3>
+                    <p class="text-highlight mb-3">Genex Infosys Limited | August 2022 - Present</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Optimized legacy systems and refactored microservices architecture, enhancing system scalability by 80%.</li>
+                        <li>Led the development of a multi-region payment gateway platform used by over 30M customers.</li>
+                        <li>Implemented TDD methodologies, boosting code reliability by 95%.</li>
+                        <li>Mentored junior developers in both technical and soft skills, fostering a team growth mindset.</li>
+                    </ul>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-2">Senior Software Engineer</h3>
+                    <p class="text-highlight mb-3">Aadi BD Limited | February 2019 - July 2022</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Rebuilt an e-commerce multi-vendor system to handle over 30K daily transactions.</li>
+                        <li>Optimized queries and introduced caching, achieving a 50% faster response time for an e-commerce platform.</li>
+                        <li>Ensured business growth by making strategic technical decisions that improved system performance.</li>
+                    </ul>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-2">Software Engineer</h3>
+                    <p class="text-highlight mb-3">Dream Door Soft Ltd | February 2018 - January 2019</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Developed back-end APIs for 10+ products using Python and Django framework.</li>
+                        <li>Led a team of 5 developers, ensuring timely project delivery with minimal bugs.</li>
+                    </ul>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-2">Junior Software Engineer</h3>
+                    <p class="text-highlight mb-3">FIFO Ltd | April 2015 - May 2017</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Developed back-end APIs and services using PHP, Laravel, and CodeIgniter.</li>
+                        <li>Improved bug resolution protocols, reducing bugs in the system by 75%.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="bg-secondary p-6 sm:p-8 rounded-lg shadow-lg mt-8 sm:mt-16 transition-transform hover:scale-105 fade-in">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Notable Projects</h2>
+            <div class="space-y-4 sm:space-y-6">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-2">MYGP App</h3>
+                    <p class="mb-2">A platform servicing 30 million users for managing telecom services, using scalable microservices.</p>
+                    <p class="text-sm text-highlight">Tech Stack: PHP, Laravel, Node.js, PostgreSQL, Redis</p>
+                    <a href="https://www.grameenphone.com/personal/services/digital-services/mygp-app/" class="text-highlight hover:underline">View Project</a>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-2">Aadi Marketplace</h3>
+                    <p class="mb-2">An e-commerce platform serving 30,000+ users daily, handling high-traffic transactions.</p>
+                    <p class="text-sm text-highlight">Tech Stack: Python, Django, PostgreSQL, Redis, Celery</p>
+                    <a href="https://www.aadi.com.bd" class="text-highlight hover:underline">View Project</a>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-2">Pricing Governance System</h3>
+                    <p class="mb-2">A system for analyzing and visualizing data from Excel models for a business unit.</p>
+                    <p class="text-sm text-highlight">Tech Stack: Python, Django, MySQL, Beautiful Soup</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="bg-secondary p-6 sm:p-8 rounded-lg shadow-lg mt-8 sm:mt-16 transition-transform hover:scale-105 fade-in">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6">Education</h2>
+            <div class="fade-in">
+                <h3 class="text-2xl font-semibold mb-2">Master of Science, Computer Science & Engineering</h3>
+                <p class="text-highlight">Daffodil International University | January 2016 - December 2017</p>
+            </div>
+            <div class="mt-4 fade-in">
+                <h3 class="text-2xl font-semibold mb-2">Bachelor's Degree, Computer Science & Engineering</h3>
+                <p class="text-highlight">Daffodil International University | 2012 - 2015</p>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-secondary p-6 sm:p-8 rounded-lg shadow-lg mt-8 sm:mt-16 text-center fade-in">
+            <p class="text-base sm:text-lg mb-4">© <span id="current-year"></span> MD ASADUZZAMAN. All rights reserved.</p>
+            <p class="text-base sm:text-lg mb-4">Follow me on <a href="https://www.linkedin.com/in/theasad/" class="text-highlight hover:underline">LinkedIn</a> | <a href="https://github.com/theasad" class="text-highlight hover:underline">GitHub</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+
+            // Set the current year in the footer
+            const currentYear = new Date().getFullYear();
+            document.getElementById('current-year').textContent = currentYear;
+        });
+    </script>
+</body>
+
+</html>
