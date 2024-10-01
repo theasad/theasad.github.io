@@ -60,6 +60,11 @@
             animation: gradientBackground 10s ease infinite;
         }
 
+        .footer-section {
+            background: linear-gradient(315deg, #0f172a, #1e293b); /* Reversed gradient */
+            animation: gradientBackground 10s ease infinite;
+        }
+
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -214,7 +219,7 @@
         </section>
 
         <!-- Footer Section -->
-        <footer class="bg-secondary p-6 sm:p-8 rounded-lg shadow-lg mt-8 sm:mt-16 text-center fade-in">
+        <footer class="footer-section p-6 sm:p-8 rounded-lg shadow-lg mt-8 sm:mt-16 text-center fade-in">
             <p class="text-base sm:text-lg mb-4">© <span id="current-year"></span> MD ASADUZZAMAN. All rights reserved.</p>
             <p class="text-base sm:text-lg mb-4">Follow me on <a href="https://www.linkedin.com/in/theasad/" class="text-highlight hover:underline">LinkedIn</a> | <a href="https://github.com/theasad" class="text-highlight hover:underline">GitHub</a></p>
         </footer>
